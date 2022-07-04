@@ -15,15 +15,16 @@ h1{
 section {
     display: flex;
     align-items: center;
-    padding: 4rem;
+    padding: 4rem 3rem;
 }
 
 .top-banner {
     background: url(images/top-banner.png) no-repeat;
 }
 
-.top-banner h3 {
-    margin: 1rem;
+.top-banner h3,
+.dream-big h3 {
+    margin: 1.3rem 0;
 }
 
 .half-width h1 span{
@@ -32,6 +33,7 @@ section {
 
 .half-width {
     width: 50%;
+    padding: 0 1.5rem;
 }
 
 .half-width img{
@@ -47,4 +49,14 @@ section {
     text-decoration: none;
     display: inline-block;
     margin-top: .8rem;
+    text-transform: uppercase;
+}
+
+/* Dream Big */
+.dream-big {
+    background: url(images/dream-bg.png) no-repeat right;
+}
+
+.dream-big p {
+    width: 80%;
 }
