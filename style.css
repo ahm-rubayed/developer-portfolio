@@ -1,18 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 3rem;
     margin: 1rem 0;
 }
 
-section {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1rem 0;
+}
+
+.flex {
     display: flex;
     align-items: center;
     padding: 4rem 3rem;
@@ -27,8 +37,9 @@ section {
     margin: 1.3rem 0;
 }
 
-.half-width h1 span{
-    color: #f39c12  ;
+.half-width h1 span,
+.experience-area h4 {
+    color: #f39c12;
 }
 
 .half-width {
@@ -36,7 +47,7 @@ section {
     padding: 0 1.5rem;
 }
 
-.half-width img{
+.half-width img {
     width: 100%;
 }
 
@@ -48,7 +59,7 @@ section {
     font-weight: 700;
     text-decoration: none;
     display: inline-block;
-    margin-top: .8rem;
+    margin-top: 1rem;
     text-transform: uppercase;
 }
 
@@ -59,4 +70,44 @@ section {
 
 .dream-big p {
     width: 80%;
+}
+
+/* Experience area */
+.experience-area {
+    background: url(images/exp-bg.png) no-repeat left;
+}
+
+.experience-area h1 {
+    text-align: center;
+}
+
+.experience-area .half-width {
+    box-shadow: 10px 10px 10px grey;
+    padding: 4rem 2rem;
+    background: #fff;
+    margin: 0 1.5rem;
+    border-radius: 8px;
+}
+
+.experience-area .flex {
+    align-items: unset;
+}
+
+.experience-area h2{
+    font-size: 2rem;
+}
+
+.experience-area .half-width:nth-child(1) {
+    border-left: 5px solid #e74c3c;
+}
+
+.experience-area .half-width:nth-child(2) {
+    border-left: 5px solid #3498db;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
+    padding: 4rem 0 1rem 0;
+    color: #58656e;
 }
